@@ -243,6 +243,18 @@ nav {
 .desktopNav {
   width: 65%; }
 
+.tooltip {
+  text-decoration: none;
+  position: relative; }
+
+.tooltip span {
+  display: none; }
+
+.tooltip:hover span {
+  display: block;
+  position: fixed;
+  overflow: hidden; }
+
 @media (max-width: 650px) {
   nav {
     display: block; }

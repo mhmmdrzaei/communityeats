@@ -43,6 +43,22 @@ nav {
 	width: 65%;
 }
 
+// hover text show tooltip
+.tooltip {
+    text-decoration:none;
+    position:relative;
+}
+.tooltip span {
+    display:none;
+}
+.tooltip:hover span {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+}
+//end of tooltip
+
+
 
 @media(max-width: 650px){
 	nav {
