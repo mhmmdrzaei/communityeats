@@ -1,10 +1,9 @@
 @import 'partials/setup';
+@import 'partials/hamburger';
 
 
 
-$font-header: 'Six Caps', sans-serif;
-$font-title: 'Hind', sans-serif;
-$font-body: 'Open Sans', sans-serif;
+$font-body: 'Nunito', sans-serif;
 
 $color-brown:#320F08;
 $color-green:#394F48;
@@ -23,7 +22,33 @@ $color-cream:#EFDE7F;
 	display: flex;
 	flex-flow: row wrap;
 }
+body {
+	font-family: $font-body;
+	max-width: 1200px;
+	margin: 0 auto;
+}
 
 html {
 	font-size: 62.5%;
+}
+
+.active {
+	border-bottom: 3px solid black;
+
+}
+nav {
+	display: none;
+}
+.desktopNav {
+	width: 65%;
+}
+
+
+@media(max-width: 650px){
+	nav {
+		display: block;
+	}
+	.desktopNav {
+		display: none;
+	}
 }
