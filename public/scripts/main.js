@@ -1,12 +1,12 @@
-"use strict";
+'use strict';
 
 //active Links 
 
-$("ul.menu li a").each(function () {
-    if (this.href == window.location.href) {
-        $(this).addClass("active");
-    }
-});
+// $("desktopNav a").each(function() {
+//     if (this.href == window.location.href) {
+//         $(this).addClass("active");
+//     }
+// });
 
 //Menu toggle
 $('label').on('click', function (event) {
@@ -15,12 +15,13 @@ $('label').on('click', function (event) {
 });
 
 //span text menu
-
-var tooltipSpan = document.getElementById('tooltip-span');
-
-window.onmousemove = function (e) {
-    var x = e.clientX,
-        y = e.clientY;
-    tooltipSpan.style.top = y + 20 + 'px';
-    tooltipSpan.style.left = x + 20 + 'px';
-};
+$(function () {
+    var current = location.pathname;
+    $('#nav li a').each(function () {
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if ($this.attr('href').indexOf(current) !== -1) {
+            $this.addClass('active');
+        }
+    });
+});
