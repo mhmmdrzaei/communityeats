@@ -179,7 +179,7 @@ nav label {
 nav menu {
   background: white;
   width: 100%;
-  height: 52vh;
+  height: 50%;
   display: none;
   overflow: auto;
   transition: opacity 300ms ease;
@@ -194,8 +194,12 @@ nav menu {
     height: 45px;
     display: block;
     text-align: center; }
+    nav menu a:hover {
+      border-bottom: none; }
     nav menu a:first-child {
-      margin-top: 130px; }
+      margin-top: 100px; }
+    nav menu a:last-child {
+      margin-bottom: 75px; }
     nav menu a a {
       padding: 20px 0;
       font: 100 18px Lato, helvetica, sans-serif;
@@ -237,24 +241,33 @@ body {
 
 a {
   text-decoration: none;
-  color: black; }
+  color: black;
+  border-bottom: 2px solid white; }
   a:hover {
-    text-decoration: underline; }
+    border-bottom: 2px solid black; }
 
 h1 {
   font-size: 65px;
   font-size: 6.5rem;
   text-transform: uppercase;
   font-weight: 900;
-  margin: 30px 0; }
+  margin: 30px 0 0; }
   h1 a:hover {
-    text-decoration: none; }
+    border-bottom: none; }
 
 h2 {
   font-size: 30px;
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 900; }
+
+h3 {
+  font-size: 40px;
+  font-size: 4rem;
+  margin: 0 0 30px;
+  text-transform: uppercase; }
+  h3 a:hover {
+    border-bottom: none; }
 
 h5 {
   font-size: 12px;
@@ -326,7 +339,7 @@ audio {
 .tooltip:hover span {
   display: block;
   position: absolute;
-  border: 3px solid black;
+  border: 2px solid black;
   background: white;
   padding: 10px;
   z-index: 999; }
@@ -335,8 +348,9 @@ audio {
   margin: 40px auto; }
 
 .projectsMain {
-  width: 90%;
   margin: 0 auto; }
+  .projectsMain a:hover {
+    border-bottom: none; }
 
 .projectEach {
   width: 130px;
@@ -359,19 +373,28 @@ audio {
   .socialMediaContact a {
     display: block;
     text-align: center;
-    margin: 20px; }
+    margin: 20px;
+    border: none; }
     .socialMediaContact a i {
       margin-right: 5px; }
+    .socialMediaContact a:hover {
+      border-bottom: none; }
 
 .footer {
   position: absolute;
   bottom: 8px; }
+
+.active {
+  border-bottom: 2px solid black; }
 
 @media (max-width: 650px) {
   h1 {
     font-size: 50px;
     font-size: 5rem;
     margin-top: 50px; }
+  h3 {
+    font-size: 30px;
+    font-size: 3rem; }
   nav {
     display: block; }
   .desktopNav {
@@ -381,7 +404,10 @@ audio {
   .projectsMain {
     width: 100%; }
   h1 {
-    font-size: 45px;
-    font-size: 4.5rem; } }
+    font-size: 35px;
+    font-size: 3.5rem; }
+  h3 {
+    font-size: 23px;
+    font-size: 2.3rem; } }
 
 /*# sourceMappingURL=style.css.map */
