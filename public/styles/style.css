@@ -344,6 +344,12 @@ audio {
   padding: 10px;
   z-index: 999; }
 
+.interlude img:hover {
+  border: 3px solid red; }
+
+.activePlaylist img {
+  border: 3px solid black; }
+
 .welcom {
   margin: 40px auto; }
 
@@ -379,10 +385,6 @@ audio {
       margin-right: 5px; }
     .socialMediaContact a:hover {
       border-bottom: none; }
-
-.footer {
-  position: absolute;
-  bottom: 8px; }
 
 .active {
   border-bottom: 2px solid black; }

@@ -158,6 +158,19 @@ audio {
     padding: 10px;
     z-index: 999;
 }
+.interlude {
+	img {
+		&:hover {
+			border: 3px solid red;
+		}
+	}
+}
+.activePlaylist{
+	img {
+		border: 3px solid black;
+	}
+
+}
 
 //end of tooltip
 //index page 
@@ -212,8 +225,7 @@ audio {
 }
 //footer 
 .footer {
-	position: absolute;
-    bottom: 8px
+	
 }
 //active
 .active {
